@@ -18,8 +18,7 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(
-            name: "SKPhotoBrowser",
-            path: "SKPhotoBrowser")
+            name: "SKPhotoBrowser")
     ],
     swiftLanguageVersions: [.v5]
 )

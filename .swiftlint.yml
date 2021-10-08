@@ -1,9 +1,8 @@
 disabled_rules:
-  - type_body_length
   - line_length
   - trailing_newline
   - trailing_whitespace
-  - variable_name
+  - identifier_name
   - type_name
   - todo
   - nesting
@@ -13,8 +12,10 @@ excluded:
   - Frameworks
   - Pods
 
-variable_name_min_length: 1
-variable_name_max_length: 40
+identifier_name:
+  min_length: 1
+  max_length: 40
+
 function_body_length: 350
 file_length: 800
 type_body_length: 800

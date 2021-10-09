@@ -32,8 +32,6 @@
 		9521CC63232F677A00446D11 /* UIApplication+UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521CC60232F677900446D11 /* UIApplication+UIWindow.swift */; };
 		9521CC64232F677A00446D11 /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521CC61232F677900446D11 /* UIImage+Rotation.swift */; };
 		9521CC65232F677A00446D11 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521CC62232F677900446D11 /* UIView+Radius.swift */; };
-		9521CC6B232F693800446D11 /* UIImage+animatedGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 9521CC69232F693800446D11 /* UIImage+animatedGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9521CC6C232F693800446D11 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 9521CC6A232F693800446D11 /* UIImage+animatedGIF.m */; };
 		A64B89361CB04222000071B9 /* SKPhotoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B89351CB04222000071B9 /* SKPhotoBrowserTests.swift */; };
 		A64B89381CB04222000071B9 /* SKPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8909B5301BC791280060A053 /* SKPhotoBrowser.framework */; };
 /* End PBXBuildFile section */
@@ -140,12 +138,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		3F861DD22711FEFA002C3D7D /* ObjCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				9521CC69232F693800446D11 /* UIImage+animatedGIF.h */,
+				9521CC6A232F693800446D11 /* UIImage+animatedGIF.m */,
+			);
+			path = ObjCExtensions;
+			sourceTree = "<group>";
+		};
 		8909B5261BC791280060A053 = {
 			isa = PBXGroup;
 			children = (
 				8909B5351BC791280060A053 /* Info.plist */,
 				3F018031271113DF0077FC5A /* Package.swift */,
 				8909B5321BC791280060A053 /* Sources */,
+				3F861DD22711FEFA002C3D7D /* ObjCExtensions */,
 				A64B89341CB04222000071B9 /* Tests */,
 				8909B5311BC791280060A053 /* Products */,
 			);
@@ -171,8 +179,6 @@
 		9521CC5F232F677900446D11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9521CC69232F693800446D11 /* UIImage+animatedGIF.h */,
-				9521CC6A232F693800446D11 /* UIImage+animatedGIF.m */,
 				9521CC60232F677900446D11 /* UIApplication+UIWindow.swift */,
 				9521CC61232F677900446D11 /* UIImage+Rotation.swift */,
 				9521CC62232F677900446D11 /* UIView+Radius.swift */,
@@ -197,7 +203,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9521CC6B232F693800446D11 /* UIImage+animatedGIF.h in Headers */,
 				8909B5341BC791280060A053 /* SKPhotoBrowser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +337,6 @@
 				7643F4B61FE9F42F00475F6E /* SKPaginationView.swift in Sources */,
 				7643F4B41FE8CE7A00475F6E /* SKActionView.swift in Sources */,
 				8917B1B01D5A13DE000CE1C4 /* SKPhotoBrowserDelegate.swift in Sources */,
-				9521CC6C232F693800446D11 /* UIImage+animatedGIF.m in Sources */,
 				89D0BA491D59966B002A811B /* SKMesurement.swift in Sources */,
 				8909B5471BC791510060A053 /* SKPhoto.swift in Sources */,
 				8909B5461BC791510060A053 /* SKIndicatorView.swift in Sources */,
@@ -497,7 +501,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keishi.suzuki.SKPhotoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};

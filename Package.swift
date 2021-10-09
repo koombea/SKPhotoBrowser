@@ -16,7 +16,6 @@ let package = Package(
     targets: [
         .target(
             name: "SKPhotoBrowser",
-            path: "Sources/SKPhotoBrowser",
             resources: [.copy("SKPhotoBrowser.bundle")])
     ],
     swiftLanguageVersions: [.v5]

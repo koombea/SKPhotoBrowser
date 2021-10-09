@@ -1,5 +1,8 @@
 # Change Log
 
+## 8.0.0
+- Support xcode13.x. swift5.5
+
 ## 7.0.0
 ### Big Changed
 - Support xcode12.x. swift5.2

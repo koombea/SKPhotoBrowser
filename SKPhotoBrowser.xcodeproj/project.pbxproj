@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3F34BC8A271256CC00AF4599 /* SKPhotoBrowseXCFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3F34BC8B271256CC00AF4599 /* Build configuration list for PBXAggregateTarget "SKPhotoBrowseXCFramework" */;
+			buildPhases = (
+				3F34BC912712579300AF4599 /* Create Aggregated Framework */,
+			);
+			dependencies = (
+				3F34BC902712578A00AF4599 /* PBXTargetDependency */,
+			);
+			name = SKPhotoBrowseXCFramework;
+			productName = SKPhotoBrowserAggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		26C97AD51D0EB6870039F6CB /* SKCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C97AD41D0EB6870039F6CB /* SKCache.swift */; };
 		26C97AD71D0EB6A00039F6CB /* SKCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */; };
@@ -20,7 +35,7 @@
 		8909B5451BC791510060A053 /* SKDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B53D1BC791510060A053 /* SKDetectingView.swift */; };
 		8909B5461BC791510060A053 /* SKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B53E1BC791510060A053 /* SKIndicatorView.swift */; };
 		8909B5471BC791510060A053 /* SKPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B53F1BC791510060A053 /* SKPhoto.swift */; };
-		8909B5491BC791510060A053 /* SKPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B5411BC791510060A053 /* SKPhotoBrowser.swift */; };
+		8909B5491BC791510060A053 /* SKPhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B5411BC791510060A053 /* SKPhotoBrowserViewController.swift */; };
 		8909B54A1BC791510060A053 /* SKZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B5421BC791510060A053 /* SKZoomingScrollView.swift */; };
 		8909B54D1BC7916E0060A053 /* SKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8909B54C1BC7916E0060A053 /* SKPhotoBrowser.bundle */; };
 		8917B1B01D5A13DE000CE1C4 /* SKPhotoBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917B1AF1D5A13DE000CE1C4 /* SKPhotoBrowserDelegate.swift */; };
@@ -38,6 +53,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3F34BC8F2712578A00AF4599 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8909B5271BC791280060A053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8909B52F1BC791280060A053;
+			remoteInfo = SKPhotoBrowser;
+		};
 		A64B89391CB04222000071B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8909B5271BC791280060A053 /* Project object */;
@@ -65,7 +87,7 @@
 		8909B53D1BC791510060A053 /* SKDetectingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDetectingView.swift; sourceTree = "<group>"; };
 		8909B53E1BC791510060A053 /* SKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIndicatorView.swift; sourceTree = "<group>"; };
 		8909B53F1BC791510060A053 /* SKPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhoto.swift; sourceTree = "<group>"; };
-		8909B5411BC791510060A053 /* SKPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowser.swift; sourceTree = "<group>"; };
+		8909B5411BC791510060A053 /* SKPhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserViewController.swift; sourceTree = "<group>"; };
 		8909B5421BC791510060A053 /* SKZoomingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKZoomingScrollView.swift; sourceTree = "<group>"; };
 		8909B54C1BC7916E0060A053 /* SKPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SKPhotoBrowser.bundle; sourceTree = "<group>"; };
 		8917B1AF1D5A13DE000CE1C4 /* SKPhotoBrowserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +161,7 @@
 				7643F4B51FE9F42F00475F6E /* SKPaginationView.swift */,
 				89C24A831D657AFE005F09A9 /* SKPagingScrollView.swift */,
 				8909B53F1BC791510060A053 /* SKPhoto.swift */,
-				8909B5411BC791510060A053 /* SKPhotoBrowser.swift */,
+				8909B5411BC791510060A053 /* SKPhotoBrowserViewController.swift */,
 				89C24A811D657AD1005F09A9 /* SKPhotoBrowserOptions.swift */,
 				8917B1AF1D5A13DE000CE1C4 /* SKPhotoBrowserDelegate.swift */,
 				7643F4B81FEA4FCF00475F6E /* SKToolbar.swift */,
@@ -266,6 +288,10 @@
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = suzuki_keishi;
 				TargetAttributes = {
+					3F34BC8A271256CC00AF4599 = {
+						CreatedOnToolsVersion = 13.0;
+						ProvisioningStyle = Automatic;
+					};
 					8909B52F1BC791280060A053 = {
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 1200;
@@ -291,6 +317,7 @@
 			targets = (
 				8909B52F1BC791280060A053 /* SKPhotoBrowser */,
 				A64B89321CB04222000071B9 /* SKPhotoBrowserTests */,
+				3F34BC8A271256CC00AF4599 /* SKPhotoBrowseXCFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -314,6 +341,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3F34BC912712579300AF4599 /* Create Aggregated Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Create Aggregated Framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCHEME_NAME=\"SKPhotoBrowser\"\nFRAMEWORK_NAME=\"SKPhotoBrowser\"\n\nSIMULATOR_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}/${FRAMEWORK_NAME}-iphonesimulator.xcarchive\"\nDEVICE_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}/${FRAMEWORK_NAME}-iphoneos.xcarchive\"\nOUTPUT_DIC=\"./xcframework/\"\n# Simulator xcarchieve\nxcodebuild archive \\\n  -scheme ${SCHEME_NAME} \\\n  -archivePath ${SIMULATOR_ARCHIVE_PATH} \\\n  -sdk iphonesimulator \\\n  SKIP_INSTALL=NO\n# Device xcarchieve\nxcodebuild archive \\\n  -scheme ${SCHEME_NAME} \\\n  -archivePath ${DEVICE_ARCHIVE_PATH} \\\n  -sdk iphoneos \\\n  SKIP_INSTALL=NO\n# Clean up old output directory\nrm -rf \"${OUTPUT_DIC}\"\n# Create xcframwork combine of all frameworks\nxcodebuild -create-xcframework \\\n  -framework ${SIMULATOR_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework \\\n  -framework ${DEVICE_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework \\\n  -output ${OUTPUT_DIC}/${FRAMEWORK_NAME}.xcframework\n";
+		};
 		898687D41C5F4BB600652FD0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,7 +399,7 @@
 				89C24A821D657AD1005F09A9 /* SKPhotoBrowserOptions.swift in Sources */,
 				26C97AD51D0EB6870039F6CB /* SKCache.swift in Sources */,
 				8909B5431BC791510060A053 /* SKCaptionView.swift in Sources */,
-				8909B5491BC791510060A053 /* SKPhotoBrowser.swift in Sources */,
+				8909B5491BC791510060A053 /* SKPhotoBrowserViewController.swift in Sources */,
 				9521CC63232F677A00446D11 /* UIApplication+UIWindow.swift in Sources */,
 				8909B5451BC791510060A053 /* SKDetectingView.swift in Sources */,
 			);
@@ -372,6 +417,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3F34BC902712578A00AF4599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8909B52F1BC791280060A053 /* SKPhotoBrowser */;
+			targetProxy = 3F34BC8F2712578A00AF4599 /* PBXContainerItemProxy */;
+		};
 		A64B893A1CB04222000071B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8909B52F1BC791280060A053 /* SKPhotoBrowser */;
@@ -380,6 +430,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3F34BC8C271256CC00AF4599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F34BC8D271256CC00AF4599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8909B5361BC791280060A053 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -567,6 +633,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F34BC8B271256CC00AF4599 /* Build configuration list for PBXAggregateTarget "SKPhotoBrowseXCFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F34BC8C271256CC00AF4599 /* Debug */,
+				3F34BC8D271256CC00AF4599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8909B52A1BC791280060A053 /* Build configuration list for PBXProject "SKPhotoBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

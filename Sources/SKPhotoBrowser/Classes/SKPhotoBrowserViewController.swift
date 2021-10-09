@@ -11,7 +11,7 @@ import UIKit
 public let SKPHOTO_LOADING_DID_END_NOTIFICATION = "photoLoadingDidEndNotification"
 
 // MARK: - SKPhotoBrowser
-open class SKPhotoBrowser: UIViewController {
+open class SKPhotoBrowserViewController: UIViewController {
     // open function
     open var currentPageIndex: Int = 0
     open var initPageIndex: Int = 0
@@ -262,7 +262,7 @@ open class SKPhotoBrowser: UIViewController {
 
 // MARK: - Public Function For Customizing Buttons
 
-public extension SKPhotoBrowser {
+public extension SKPhotoBrowserViewController {
     func updateCloseButton(_ image: UIImage, size: CGSize? = nil) {
         actionView.updateCloseButton(image: image, size: size)
     }
@@ -274,7 +274,7 @@ public extension SKPhotoBrowser {
 
 // MARK: - Public Function For Browser Control
 
-public extension SKPhotoBrowser {
+public extension SKPhotoBrowserViewController {
     func initializePageIndex(_ index: Int) {
         let i = min(index, photos.count - 1)
         currentPageIndex = i
@@ -325,7 +325,7 @@ public extension SKPhotoBrowser {
         // reset
         cancelControlHiding()
         // start
-        controlVisibilityTimer = Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(SKPhotoBrowser.hideControls(_:)), userInfo: nil, repeats: false)
+        controlVisibilityTimer = Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(SKPhotoBrowserViewController.hideControls(_:)), userInfo: nil, repeats: false)
     }
     
     func hideControls() {
@@ -364,7 +364,7 @@ public extension SKPhotoBrowser {
 
 // MARK: - Internal Function
 
-internal extension SKPhotoBrowser {
+internal extension SKPhotoBrowserViewController {
     func showButtons() {
         actionView.animate(hidden: false)
     }
@@ -384,7 +384,7 @@ internal extension SKPhotoBrowser {
 
 // MARK: - Internal Function For Frame Calc
 
-internal extension SKPhotoBrowser {
+internal extension SKPhotoBrowserViewController {
     func frameForToolbarAtOrientation() -> CGRect {
         let offset: CGFloat = {
             if #available(iOS 11.0, *) {
@@ -417,7 +417,7 @@ internal extension SKPhotoBrowser {
 
 // MARK: - Internal Function For Button Pressed, UIGesture Control
 
-internal extension SKPhotoBrowser {
+internal extension SKPhotoBrowserViewController {
     @objc func panGestureRecognized(_ sender: UIPanGestureRecognizer) {
         guard let zoomingScrollView: SKZoomingScrollView = pagingScrollView.pageDisplayedAtIndex(currentPageIndex) else {
             return
@@ -529,7 +529,7 @@ internal extension SKPhotoBrowser {
 }
 
 // MARK: - Private Function
-private extension SKPhotoBrowser {
+private extension SKPhotoBrowserViewController {
     func configureAppearance() {
         view.backgroundColor = bgColor
         view.clipsToBounds = true
@@ -548,7 +548,7 @@ private extension SKPhotoBrowser {
     func configureGestureControl() {
         guard !SKPhotoBrowserOptions.disableVerticalSwipe else { return }
         
-        panGesture = UIPanGestureRecognizer(target: self, action: #selector(SKPhotoBrowser.panGestureRecognized(_:)))
+        panGesture = UIPanGestureRecognizer(target: self, action: #selector(SKPhotoBrowserViewController.panGestureRecognized(_:)))
         panGesture?.minimumNumberOfTouches = 1
         panGesture?.maximumNumberOfTouches = 1
 
@@ -594,7 +594,7 @@ private extension SKPhotoBrowser {
 
 // MARK: - UIScrollView Delegate
 
-extension SKPhotoBrowser: UIScrollViewDelegate {
+extension SKPhotoBrowserViewController: UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard isViewActive else { return }
         guard !isPerformingLayout else { return }

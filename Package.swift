@@ -13,6 +13,7 @@ let package = Package(
             name: "SKPhotoBrowser",
             targets: ["SKPhotoBrowser"])
     ],
+		dependencies: [],
     targets: [
         .target(
             name: "SKPhotoBrowser",

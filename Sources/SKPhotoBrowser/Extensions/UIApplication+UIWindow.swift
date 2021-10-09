@@ -14,7 +14,7 @@ internal extension UIApplication {
         // unwrap it twice to be sure the window is not nil
         if let appWindow = UIApplication.shared.delegate?.window, let window = appWindow {
             return window
-        } else if let window = UIApplication.shared.keyWindow {
+        } else if let window = UIApplication.shared.windows.first {
             return window
         }
 

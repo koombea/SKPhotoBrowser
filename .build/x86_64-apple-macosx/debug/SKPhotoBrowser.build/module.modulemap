@@ -1,0 +1,4 @@
+module SKPhotoBrowser {
+    header "/Users/oscardemoya/dev/ios/luna/forks/SKPhotoBrowser/.build/x86_64-apple-macosx/debug/SKPhotoBrowser.build/SKPhotoBrowser-Swift.h"
+    requires objc
+}

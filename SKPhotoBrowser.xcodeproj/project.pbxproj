@@ -52,6 +52,7 @@
 		26C97AD41D0EB6870039F6CB /* SKCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCache.swift; sourceTree = "<group>"; };
 		26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCacheTests.swift; sourceTree = "<group>"; };
 		26C97AD81D0EB8BB0039F6CB /* SKCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCacheable.swift; sourceTree = "<group>"; };
+		3F018031271113DF0077FC5A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		7643F4B31FE8CE7A00475F6E /* SKActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKActionView.swift; sourceTree = "<group>"; };
 		7643F4B51FE9F42F00475F6E /* SKPaginationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKPaginationView.swift; sourceTree = "<group>"; };
 		7643F4B81FEA4FCF00475F6E /* SKToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKToolbar.swift; sourceTree = "<group>"; };
@@ -106,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				8909B5331BC791280060A053 /* SKPhotoBrowser.h */,
+				9521CC5F232F677900446D11 /* Extensions */,
+				3F018032271114040077FC5A /* Resources */,
 				7643F4B31FE8CE7A00475F6E /* SKActionView.swift */,
 				89D0BA461D5994A8002A811B /* SKAnimator.swift */,
 				8917B1B31D5A14B0000CE1C4 /* SKButtons.swift */,
@@ -125,14 +128,23 @@
 				8917B1AF1D5A13DE000CE1C4 /* SKPhotoBrowserDelegate.swift */,
 				7643F4B81FEA4FCF00475F6E /* SKToolbar.swift */,
 				8909B5421BC791510060A053 /* SKZoomingScrollView.swift */,
-				9521CC5F232F677900446D11 /* Extensions */,
 			);
 			path = SKPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		3F018032271114040077FC5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8909B54C1BC7916E0060A053 /* SKPhotoBrowser.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8909B5261BC791280060A053 = {
 			isa = PBXGroup;
 			children = (
+				8909B5351BC791280060A053 /* Info.plist */,
+				3F018031271113DF0077FC5A /* Package.swift */,
 				8909B5321BC791280060A053 /* Sources */,
 				A64B89341CB04222000071B9 /* SKPhotoBrowserTests */,
 				8909B5311BC791280060A053 /* Products */,
@@ -152,8 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				3F01802E271111A80077FC5A /* SKPhotoBrowser */,
-				8909B5351BC791280060A053 /* Info.plist */,
-				8909B54C1BC7916E0060A053 /* SKPhotoBrowser.bundle */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -479,7 +489,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -502,7 +512,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

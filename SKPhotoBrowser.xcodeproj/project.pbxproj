@@ -108,17 +108,9 @@
 				8909B5331BC791280060A053 /* SKPhotoBrowser.h */,
 				3FBF3D2B271224CF00970F49 /* Classes */,
 				9521CC5F232F677900446D11 /* Extensions */,
-				3F018032271114040077FC5A /* Resources */,
-			);
-			path = SKPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		3F018032271114040077FC5A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
 				8909B54C1BC7916E0060A053 /* SKPhotoBrowser.bundle */,
 			);
-			path = Resources;
+			path = SKPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		3FBF3CF727120F9B00970F49 /* SKPhotoBrowserTests */ = {

@@ -10,10 +10,11 @@
 		26C97AD51D0EB6870039F6CB /* SKCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C97AD41D0EB6870039F6CB /* SKCache.swift */; };
 		26C97AD71D0EB6A00039F6CB /* SKCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */; };
 		26C97AD91D0EB8BB0039F6CB /* SKCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C97AD81D0EB8BB0039F6CB /* SKCacheable.swift */; };
+		3FBF3D29271221FD00970F49 /* SKPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8909B5331BC791280060A053 /* SKPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FBF3D312712286C00970F49 /* UIImage+animatedGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF3D302712286C00970F49 /* UIImage+animatedGIF.swift */; };
 		7643F4B41FE8CE7A00475F6E /* SKActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643F4B31FE8CE7A00475F6E /* SKActionView.swift */; };
 		7643F4B61FE9F42F00475F6E /* SKPaginationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643F4B51FE9F42F00475F6E /* SKPaginationView.swift */; };
 		7643F4B91FEA4FCF00475F6E /* SKToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643F4B81FEA4FCF00475F6E /* SKToolbar.swift */; };
-		8909B5341BC791280060A053 /* SKPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8909B5331BC791280060A053 /* SKPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8909B5431BC791510060A053 /* SKCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B53B1BC791510060A053 /* SKCaptionView.swift */; };
 		8909B5441BC791510060A053 /* SKDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B53C1BC791510060A053 /* SKDetectingImageView.swift */; };
 		8909B5451BC791510060A053 /* SKDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909B53D1BC791510060A053 /* SKDetectingView.swift */; };
@@ -51,6 +52,8 @@
 		26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCacheTests.swift; sourceTree = "<group>"; };
 		26C97AD81D0EB8BB0039F6CB /* SKCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCacheable.swift; sourceTree = "<group>"; };
 		3F018031271113DF0077FC5A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		3FBF3D2E271226CF00970F49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3FBF3D302712286C00970F49 /* UIImage+animatedGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+animatedGIF.swift"; sourceTree = "<group>"; };
 		7643F4B31FE8CE7A00475F6E /* SKActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKActionView.swift; sourceTree = "<group>"; };
 		7643F4B51FE9F42F00475F6E /* SKPaginationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKPaginationView.swift; sourceTree = "<group>"; };
 		7643F4B81FEA4FCF00475F6E /* SKToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKToolbar.swift; sourceTree = "<group>"; };
@@ -75,8 +78,6 @@
 		9521CC60232F677900446D11 /* UIApplication+UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+UIWindow.swift"; sourceTree = "<group>"; };
 		9521CC61232F677900446D11 /* UIImage+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotation.swift"; sourceTree = "<group>"; };
 		9521CC62232F677900446D11 /* UIView+Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
-		9521CC69232F693800446D11 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
-		9521CC6A232F693800446D11 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		A64B89331CB04222000071B9 /* SKPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64B89351CB04222000071B9 /* SKPhotoBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserTests.swift; sourceTree = "<group>"; };
 		A64B89371CB04222000071B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,8 +106,33 @@
 			isa = PBXGroup;
 			children = (
 				8909B5331BC791280060A053 /* SKPhotoBrowser.h */,
+				3FBF3D2B271224CF00970F49 /* Classes */,
 				9521CC5F232F677900446D11 /* Extensions */,
 				3F018032271114040077FC5A /* Resources */,
+			);
+			path = SKPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		3F018032271114040077FC5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8909B54C1BC7916E0060A053 /* SKPhotoBrowser.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FBF3CF727120F9B00970F49 /* SKPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */,
+				A64B89351CB04222000071B9 /* SKPhotoBrowserTests.swift */,
+			);
+			path = SKPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		3FBF3D2B271224CF00970F49 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
 				7643F4B31FE8CE7A00475F6E /* SKActionView.swift */,
 				89D0BA461D5994A8002A811B /* SKAnimator.swift */,
 				8917B1B31D5A14B0000CE1C4 /* SKButtons.swift */,
@@ -127,35 +153,26 @@
 				7643F4B81FEA4FCF00475F6E /* SKToolbar.swift */,
 				8909B5421BC791510060A053 /* SKZoomingScrollView.swift */,
 			);
-			path = SKPhotoBrowser;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		3F018032271114040077FC5A /* Resources */ = {
+		3FBF3D2D271226CE00970F49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8909B54C1BC7916E0060A053 /* SKPhotoBrowser.bundle */,
+				3FBF3D2E271226CF00970F49 /* UIKit.framework */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		3F861DD22711FEFA002C3D7D /* ObjCExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				9521CC69232F693800446D11 /* UIImage+animatedGIF.h */,
-				9521CC6A232F693800446D11 /* UIImage+animatedGIF.m */,
-			);
-			path = ObjCExtensions;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8909B5261BC791280060A053 = {
 			isa = PBXGroup;
 			children = (
-				8909B5351BC791280060A053 /* Info.plist */,
 				3F018031271113DF0077FC5A /* Package.swift */,
+				8909B5351BC791280060A053 /* Info.plist */,
 				8909B5321BC791280060A053 /* Sources */,
-				3F861DD22711FEFA002C3D7D /* ObjCExtensions */,
 				A64B89341CB04222000071B9 /* Tests */,
 				8909B5311BC791280060A053 /* Products */,
+				3FBF3D2D271226CE00970F49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				9521CC60232F677900446D11 /* UIApplication+UIWindow.swift */,
+				3FBF3D302712286C00970F49 /* UIImage+animatedGIF.swift */,
 				9521CC61232F677900446D11 /* UIImage+Rotation.swift */,
 				9521CC62232F677900446D11 /* UIView+Radius.swift */,
 			);
@@ -189,9 +207,8 @@
 		A64B89341CB04222000071B9 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */,
-				A64B89351CB04222000071B9 /* SKPhotoBrowserTests.swift */,
 				A64B89371CB04222000071B9 /* Info.plist */,
+				3FBF3CF727120F9B00970F49 /* SKPhotoBrowserTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -203,7 +220,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8909B5341BC791280060A053 /* SKPhotoBrowser.h in Headers */,
+				3FBF3D29271221FD00970F49 /* SKPhotoBrowser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +346,7 @@
 				7643F4B91FEA4FCF00475F6E /* SKToolbar.swift in Sources */,
 				9521CC65232F677A00446D11 /* UIView+Radius.swift in Sources */,
 				89C24A841D657AFE005F09A9 /* SKPagingScrollView.swift in Sources */,
+				3FBF3D312712286C00970F49 /* UIImage+animatedGIF.swift in Sources */,
 				8909B5441BC791510060A053 /* SKDetectingImageView.swift in Sources */,
 				8909B54A1BC791510060A053 /* SKZoomingScrollView.swift in Sources */,
 				9521CC64232F677A00446D11 /* UIImage+Rotation.swift in Sources */,

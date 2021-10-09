@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 //
 //  Package.swift
 //
@@ -8,7 +8,7 @@ import PackageDescription
 let package = Package(
     name: "SKPhotoBrowser",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v11)
     ],
     products: [
         .library(
@@ -21,7 +21,8 @@ let package = Package(
             name: "SKPhotoBrowser",
             resources: [
                 .process("Resources")
-            ])
+            ]
+        )
     ],
     swiftLanguageVersions: [.v5]
 )

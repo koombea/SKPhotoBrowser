@@ -146,7 +146,7 @@
 				8909B5351BC791280060A053 /* Info.plist */,
 				3F018031271113DF0077FC5A /* Package.swift */,
 				8909B5321BC791280060A053 /* Sources */,
-				A64B89341CB04222000071B9 /* SKPhotoBrowserTests */,
+				A64B89341CB04222000071B9 /* Tests */,
 				8909B5311BC791280060A053 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -180,14 +180,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A64B89341CB04222000071B9 /* SKPhotoBrowserTests */ = {
+		A64B89341CB04222000071B9 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */,
 				A64B89351CB04222000071B9 /* SKPhotoBrowserTests.swift */,
 				A64B89371CB04222000071B9 /* Info.plist */,
 			);
-			path = SKPhotoBrowserTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -529,7 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
-				INFOPLIST_FILE = SKPhotoBrowserTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexsander-Khitev.SKPhotoBrowserTests";
@@ -542,7 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
-				INFOPLIST_FILE = SKPhotoBrowserTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexsander-Khitev.SKPhotoBrowserTests";

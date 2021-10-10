@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let bundle = Bundle(for: SKPhotoBrowser.self)
+private let bundle = Bundle(for: SKPhotoBrowserViewController.self)
 
 class SKPaginationView: UIView {
     var counterLabel: UILabel?
@@ -17,7 +17,7 @@ class SKPaginationView: UIView {
     private var margin: CGFloat = 100
     private var extraMargin: CGFloat = SKMesurement.isPhoneX ? 40 : 0
     
-    fileprivate weak var browser: SKPhotoBrowser?
+    fileprivate weak var browser: SKPhotoBrowserViewController?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -27,7 +27,7 @@ class SKPaginationView: UIView {
         super.init(frame: frame)
     }
     
-    convenience init(frame: CGRect, browser: SKPhotoBrowser?) {
+    convenience init(frame: CGRect, browser: SKPhotoBrowserViewController?) {
         self.init(frame: frame)
         self.frame = CGRect(x: 0, y: frame.height - margin - extraMargin, width: frame.width, height: 100)
         self.browser = browser
@@ -113,7 +113,7 @@ private extension SKPaginationView {
         
         let button = SKPrevButton(frame: frame)
         button.center = CGPoint(x: frame.width / 2 - 100, y: frame.height / 2)
-        button.addTarget(browser, action: #selector(SKPhotoBrowser.gotoPreviousPage), for: .touchUpInside)
+        button.addTarget(browser, action: #selector(SKPhotoBrowserViewController.gotoPreviousPage), for: .touchUpInside)
         addSubview(button)
         prevButton = button
     }
@@ -124,7 +124,7 @@ private extension SKPaginationView {
         
         let button = SKNextButton(frame: frame)
         button.center = CGPoint(x: frame.width / 2 + 100, y: frame.height / 2)
-        button.addTarget(browser, action: #selector(SKPhotoBrowser.gotoNextPage), for: .touchUpInside)
+        button.addTarget(browser, action: #selector(SKPhotoBrowserViewController.gotoNextPage), for: .touchUpInside)
         addSubview(button)
         nextButton = button
     }

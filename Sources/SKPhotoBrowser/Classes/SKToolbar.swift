@@ -9,11 +9,11 @@
 import UIKit
 
 // helpers which often used
-private let bundle = Bundle(for: SKPhotoBrowser.self)
+private let bundle = Bundle(for: SKPhotoBrowserViewController.self)
 
 class SKToolbar: UIToolbar {
     var toolActionButton: UIBarButtonItem!
-    fileprivate weak var browser: SKPhotoBrowser?
+    fileprivate weak var browser: SKPhotoBrowserViewController?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -23,7 +23,7 @@ class SKToolbar: UIToolbar {
         super.init(frame: frame)
     }
     
-    convenience init(frame: CGRect, browser: SKPhotoBrowser) {
+    convenience init(frame: CGRect, browser: SKPhotoBrowserViewController) {
         self.init(frame: frame)
         self.browser = browser
         
@@ -50,7 +50,7 @@ private extension SKToolbar {
     }
     
     func setupToolbar() {
-        toolActionButton = UIBarButtonItem(barButtonSystemItem: .action, target: browser, action: #selector(SKPhotoBrowser.actionButtonPressed))
+        toolActionButton = UIBarButtonItem(barButtonSystemItem: .action, target: browser, action: #selector(SKPhotoBrowserViewController.actionButtonPressed))
         toolActionButton.tintColor = UIColor.white
         
         var items = [UIBarButtonItem]()

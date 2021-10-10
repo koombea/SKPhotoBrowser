@@ -13,7 +13,7 @@ class SKPagingScrollView: UIScrollView {
     fileprivate let sideMargin: CGFloat = 10
     fileprivate var visiblePages: [SKZoomingScrollView] = []
     fileprivate var recycledPages: [SKZoomingScrollView] = []
-    fileprivate weak var browser: SKPhotoBrowser?
+    fileprivate weak var browser: SKPhotoBrowserViewController?
 
     var numberOfPhotos: Int {
         return browser?.photos.count ?? 0
@@ -27,7 +27,7 @@ class SKPagingScrollView: UIScrollView {
         super.init(frame: frame)
     }
     
-    convenience init(frame: CGRect, browser: SKPhotoBrowser) {
+    convenience init(frame: CGRect, browser: SKPhotoBrowserViewController) {
         self.init(frame: frame)
         self.browser = browser
 

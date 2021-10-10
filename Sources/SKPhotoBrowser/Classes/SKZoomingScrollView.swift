@@ -23,7 +23,7 @@ open class SKZoomingScrollView: UIScrollView {
         }
     }
     
-    fileprivate weak var browser: SKPhotoBrowserViewController?
+    fileprivate weak var browser: SKPhotoBrowser?
     
     fileprivate(set) var imageView: SKDetectingImageView!
     fileprivate var tapView: SKDetectingView!
@@ -39,7 +39,7 @@ open class SKZoomingScrollView: UIScrollView {
         setup()
     }
     
-    convenience init(frame: CGRect, browser: SKPhotoBrowserViewController) {
+    convenience init(frame: CGRect, browser: SKPhotoBrowser) {
         self.init(frame: frame)
         self.browser = browser
         setup()

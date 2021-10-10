@@ -9,8 +9,8 @@
 import UIKit
 
 @objc public protocol SKPhotoBrowserAnimatorDelegate {
-    func willPresent(_ browser: SKPhotoBrowserViewController)
-    func willDismiss(_ browser: SKPhotoBrowserViewController)
+    func willPresent(_ browser: SKPhotoBrowser)
+    func willDismiss(_ browser: SKPhotoBrowser)
 }
 
 class SKAnimator: NSObject, SKPhotoBrowserAnimatorDelegate {
@@ -48,7 +48,7 @@ class SKAnimator: NSObject, SKPhotoBrowserAnimatorDelegate {
         backgroundView.removeFromSuperview()
     }
     
-    func willPresent(_ browser: SKPhotoBrowserViewController) {
+    func willPresent(_ browser: SKPhotoBrowser) {
         guard let sender = browser.delegate?.viewForPhoto?(browser, index: browser.currentPageIndex) ?? senderViewForAnimation else {
             presentAnimation(browser)
             return
@@ -77,7 +77,7 @@ class SKAnimator: NSObject, SKPhotoBrowserAnimatorDelegate {
         presentAnimation(browser)
     }
     
-    func willDismiss(_ browser: SKPhotoBrowserViewController) {
+    func willDismiss(_ browser: SKPhotoBrowser) {
         guard let sender = browser.delegate?.viewForPhoto?(browser, index: browser.currentPageIndex),
             let image = browser.photoAtIndex(browser.currentPageIndex).underlyingImage,
             let scrollView = browser.pageDisplayedAtIndex(browser.currentPageIndex) else {
@@ -157,7 +157,7 @@ private extension SKAnimator {
 }
 
 private extension SKAnimator {
-    func presentAnimation(_ browser: SKPhotoBrowserViewController, completion: (() -> Void)? = nil) {
+    func presentAnimation(_ browser: SKPhotoBrowser, completion: (() -> Void)? = nil) {
         let finalFrame = self.finalImageViewFrame
         browser.view.isHidden = true
         browser.view.alpha = 0.0
@@ -186,7 +186,7 @@ private extension SKAnimator {
             })
     }
     
-    func dismissAnimation(_ browser: SKPhotoBrowserViewController, completion: (() -> Void)? = nil) {
+    func dismissAnimation(_ browser: SKPhotoBrowser, completion: (() -> Void)? = nil) {
         let finalFrame = self.senderViewOriginalFrame
 
         UIView.animate(

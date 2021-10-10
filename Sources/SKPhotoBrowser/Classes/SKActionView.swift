@@ -9,7 +9,7 @@
 import UIKit
 
 class SKActionView: UIView {
-    internal weak var browser: SKPhotoBrowserViewController?
+    internal weak var browser: SKPhotoBrowser?
     internal var closeButton: SKCloseButton!
     internal var deleteButton: SKDeleteButton!
     
@@ -24,7 +24,7 @@ class SKActionView: UIView {
         super.init(frame: frame)
     }
     
-    convenience init(frame: CGRect, browser: SKPhotoBrowserViewController) {
+    convenience init(frame: CGRect, browser: SKPhotoBrowser) {
         self.init(frame: frame)
         self.browser = browser
 

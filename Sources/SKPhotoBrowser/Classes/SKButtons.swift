@@ -9,7 +9,7 @@
 import UIKit
 
 // helpers which often used
-private let bundle = Bundle(for: SKPhotoBrowserViewController.self)
+private let bundle = Bundle(for: SKPhotoBrowser.self)
 
 class SKButton: UIButton {
     internal var showFrame: CGRect!
